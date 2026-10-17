@@ -1,0 +1,7 @@
+model: thawing   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om, w0, wa
+
+chi2 = 1652.19  (CMB 3.60, CC 6.12, BAO 11.53, SN 1630.94);  k = 5;  AIC = 1662.19
+vs flat LCDM: dchi2 = -2.5, dAIC = +1.5
+
+best fit: H0 = 67.81, wb = 0.02254, Om = 0.3099, w0 = -0.9537, wa = -0.04626
+derived: r_d = 147.0 Mpc, R = 1.7415, l_A = 301.39

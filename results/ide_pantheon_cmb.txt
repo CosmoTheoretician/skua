@@ -1,0 +1,7 @@
+model: ide   data: CC + BAO + Pantheon+ (1590 SNe) + Planck distance priors   parameters: H0, wb, Om, w, xi
+
+chi2 = 1424.75  (CMB 3.21, CC 6.10, BAO 11.82, SN 1403.62);  k = 5;  AIC = 1434.75
+vs flat LCDM: dchi2 = -0.7, dAIC = +3.3
+
+best fit: H0 = 68.16, wb = 0.02253, Om = 0.3574, w = -1.056, xi = 0.2298
+derived: r_d = 147.0 Mpc, R = 1.7420, l_A = 301.39

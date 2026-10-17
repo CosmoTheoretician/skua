@@ -1,0 +1,7 @@
+model: spline_x   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om, f05, f1, f2
+
+chi2 = 1646.19  (CMB 0.11, CC 6.56, BAO 8.32, SN 1631.21);  k = 6;  AIC = 1658.19
+vs flat LCDM: dchi2 = -8.5, dAIC = -2.5
+
+best fit: H0 = 67.98, wb = 0.02239, Om = 0.3127, f05 = 1.088, f1 = 1.023, f2 = 0.6281
+derived: r_d = 146.7 Mpc, R = 1.7487, l_A = 301.45

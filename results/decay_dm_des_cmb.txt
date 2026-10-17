@@ -1,0 +1,7 @@
+model: decay_dm   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om, xi
+
+chi2 = 1654.50  (CMB 1.49, CC 6.10, BAO 11.96, SN 1634.95);  k = 4;  AIC = 1662.50
+vs flat LCDM: dchi2 = -0.2, dAIC = +1.8
+
+best fit: H0 = 68.53, wb = 0.02247, Om = 0.3026, xi = 0.001359
+derived: r_d = 147.2 Mpc, R = 1.7446, l_A = 301.41

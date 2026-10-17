@@ -9,9 +9,11 @@ from cmb import chi2_cmb
 name = sys.argv[1]
 which = sys.argv[2] if len(sys.argv) > 2 else "pantheon"
 use_cmb = "cmb" in sys.argv[3:]
-tag = which + ("_cmb" if use_cmb else "")
+no_sn = "nosn" in sys.argv[3:]
+tag = which + ("_cmb" if use_cmb else "") + ("_nosn" if no_sn else "")
 m = importlib.import_module(f"models.{name}")
 OM = getattr(m, "OM", lambda p: p[0])
+VALID = getattr(m, "VALID", lambda p: True)
 sn = SN(which)
 REFFILE = f"results/ref_{tag}.json"
 REF = json.load(open(REFFILE)) if os.path.exists(REFFILE) else {}
@@ -22,6 +24,8 @@ def parts(q):
         H0, wb, p = q[0], q[1], q[2:]
     else:
         H0, rd, p = q[0], q[1], q[2:]
+    if not VALID(p) or not (0.01 < OM(p) < 1.0):
+        return None
     E = lambda z: m.E(z, p)
     with np.errstate(all="ignore"):
         e = E(ZG)
@@ -34,7 +38,7 @@ def parts(q):
         if not np.isfinite(c):
             return None
         out["CMB"] = c; out["_rd"] = rd; out["_R"] = R; out["_lA"] = lA
-    out["CC"] = chi2_cc(E, H0); out["BAO"] = chi2_bao(E, ok, H0, rd); out["SN"] = sn.chi2(E, ok)
+    out["CC"] = chi2_cc(E, H0); out["BAO"] = chi2_bao(E, ok, H0, rd); out["SN"] = 0.0 if no_sn else sn.chi2(E, ok)
     return out
 
 
