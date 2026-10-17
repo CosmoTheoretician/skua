@@ -1,0 +1,7 @@
+model: wcdm   data: CC + BAO + Pantheon+ (1590 SNe) + Planck distance priors   parameters: H0, wb, Om, w
+
+chi2 = 1424.75  (CMB 3.21, CC 6.10, BAO 11.82, SN 1403.62);  k = 4;  AIC = 1432.75
+vs flat LCDM: dchi2 = -0.7, dAIC = +1.3
+
+best fit: H0 = 68.16, wb = 0.02253, Om = 0.3071, w = -0.9796
+derived: r_d = 147.0 Mpc, R = 1.7420, l_A = 301.39

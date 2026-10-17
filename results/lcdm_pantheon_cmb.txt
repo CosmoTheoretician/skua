@@ -1,0 +1,6 @@
+model: lcdm   data: CC + BAO + Pantheon+ (1590 SNe) + Planck distance priors   parameters: H0, wb, Om
+
+chi2 = 1425.47  (CMB 2.12, CC 6.11, BAO 11.96, SN 1405.28);  k = 3;  AIC = 1431.47
+
+best fit: H0 = 68.59, wb = 0.02249, Om = 0.3042
+derived: r_d = 146.9 Mpc, R = 1.7435, l_A = 301.40

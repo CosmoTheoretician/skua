@@ -1,0 +1,7 @@
+model: cpl   data: CC + BAO + Pantheon+ (1590 SNe) + Planck distance priors   parameters: H0, wb, Om, w0, wa
+
+chi2 = 1419.05  (CMB 0.44, CC 6.46, BAO 9.30, SN 1402.86);  k = 5;  AIC = 1429.05
+vs flat LCDM: dchi2 = -6.4, dAIC = -2.4
+
+best fit: H0 = 67.88, wb = 0.02242, Om = 0.3128, w0 = -0.8644, wa = -0.4848
+derived: r_d = 146.7 Mpc, R = 1.7472, l_A = 301.44
