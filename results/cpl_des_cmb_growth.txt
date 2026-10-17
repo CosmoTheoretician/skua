@@ -1,0 +1,8 @@
+model: cpl   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om, w0, wa
+
+chi2 = 1658.80  (CMB 0.21, growth 13.43, CC 6.57, BAO 9.18, SN 1629.40);  k = 5;  AIC = 1668.80
+vs flat LCDM: dchi2 = -9.1, dAIC = -5.1
+
+best fit: H0 = 67.79, wb = 0.0224, Om = 0.3141, w0 = -0.835, wa = -0.6048
+derived: sigma8 = 0.766
+derived: r_d = 146.7 Mpc, R = 1.7481, l_A = 301.45

@@ -1,0 +1,7 @@
+model: lcdm   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om
+
+chi2 = 1667.95  (CMB 2.07, growth 13.29, CC 6.11, BAO 12.04, SN 1634.44);  k = 3;  AIC = 1673.95
+
+best fit: H0 = 68.58, wb = 0.02249, Om = 0.3043
+derived: sigma8 = 0.764
+derived: r_d = 146.9 Mpc, R = 1.7436, l_A = 301.40

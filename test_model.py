@@ -5,15 +5,18 @@ import numpy as np
 from scipy.optimize import differential_evolution, minimize
 from likelihoods import SN, chi2_cc, chi2_bao, ZG
 from cmb import chi2_cmb
+from growth import chi2_growth
 
 name = sys.argv[1]
 which = sys.argv[2] if len(sys.argv) > 2 else "pantheon"
 use_cmb = "cmb" in sys.argv[3:]
 no_sn = "nosn" in sys.argv[3:]
-tag = which + ("_cmb" if use_cmb else "") + ("_nosn" if no_sn else "")
+use_growth = "growth" in sys.argv[3:]
+tag = which + ("_cmb" if use_cmb else "") + ("_nosn" if no_sn else "") + ("_growth" if use_growth else "")
 m = importlib.import_module(f"models.{name}")
 OM = getattr(m, "OM", lambda p: p[0])
 VALID = getattr(m, "VALID", lambda p: True)
+RHOM = getattr(m, "RHOM", lambda z, p: p[0] * (1 + z) ** 3)
 sn = SN(which)
 REFFILE = f"results/ref_{tag}.json"
 REF = json.load(open(REFFILE)) if os.path.exists(REFFILE) else {}
@@ -38,6 +41,9 @@ def parts(q):
         if not np.isfinite(c):
             return None
         out["CMB"] = c; out["_rd"] = rd; out["_R"] = R; out["_lA"] = lA
+    if use_growth:
+        g, s8 = chi2_growth(E, lambda z: RHOM(z, p), ok)
+        out["growth"] = g; out["_s8"] = s8
     out["CC"] = chi2_cc(E, H0); out["BAO"] = chi2_bao(E, ok, H0, rd); out["SN"] = 0.0 if no_sn else sn.chi2(E, ok)
     return out
 
@@ -58,6 +64,8 @@ lines = [f"model: {name}   data: CC + BAO + {sn.name}" + (" + Planck distance pr
 if "flat LCDM" in REF:
     lines.append(f"vs flat LCDM: dchi2 = {c - REF['flat LCDM']:+.1f}, dAIC = {c + 2*k - REF['flat LCDM'] - 2*REF['k_lcdm']:+.1f}")
 lines += ["", "best fit: " + ", ".join(f"{n} = {v:.4g}" for n, v in zip(pnames, q))]
+if use_growth:
+    lines.append(f"derived: sigma8 = {o['_s8']:.3f}")
 if use_cmb:
     lines.append(f"derived: r_d = {o['_rd']:.1f} Mpc, R = {o['_R']:.4f}, l_A = {o['_lA']:.2f}")
 if name == "lcdm":

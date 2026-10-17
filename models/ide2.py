@@ -29,3 +29,7 @@ def xi_of(p): return p[2]
 def VALID(p):
     ode, odm, m, n, B = _pieces(p)
     return (ode - B) > -0.5 and n < 2.9 and abs(p[2]) < 0.3
+
+def RHOM(z, p):
+    ode, odm, mm, n, B = _pieces(p)
+    return OB * (1 + z) ** 3 + odm * (1 + z) ** mm

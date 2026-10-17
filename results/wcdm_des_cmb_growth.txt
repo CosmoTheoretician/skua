@@ -1,0 +1,8 @@
+model: wcdm   data: CC + BAO + DES-SN5YR Dovekie (1820 SNe) + Planck distance priors   parameters: H0, wb, Om, w
+
+chi2 = 1666.82  (CMB 3.44, growth 13.48, CC 6.09, BAO 11.80, SN 1632.01);  k = 4;  AIC = 1674.82
+vs flat LCDM: dchi2 = -1.1, dAIC = +0.9
+
+best fit: H0 = 68.09, wb = 0.02254, Om = 0.3075, w = -0.9764
+derived: sigma8 = 0.766
+derived: r_d = 147.0 Mpc, R = 1.7417, l_A = 301.39
