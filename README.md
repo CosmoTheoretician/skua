@@ -61,7 +61,7 @@ distinguish the readings (all models give growth χ² ≈ 13.4).
 |---|---|---|---|
 | BAO + CMB + Pantheon+ | −6.4, $(-0.86, -0.48)$ | **−8.3**, $(-0.81, -0.71)$ | 2.8σ, $(-0.84, -0.62)$ |
 | BAO + CMB + DES-SN5YR (2024 release) | — | **−19.9**, $(-0.76, -0.84)$ | −21, 4.2σ, $(-0.75, -0.86)$ |
-| BAO + CMB + DES-Dovekie (2025 recalibration) | −9.3, $(-0.83, -0.60)$ | **DOVEKIE_FULL** | ≈ −11, 3.2σ |
+| BAO + CMB + DES-Dovekie (2025 recalibration) | −9.3, $(-0.83, -0.60)$ | **−12.4**, $(-0.81, -0.66)$ | ≈ −11, 3.2σ |
 
 Δχ² is w₀wₐCDM minus ΛCDM at the best fit, two extra parameters. Best fits from `cobaya`'s
 minimizer; run-to-run spread ≈ 1–2 units.
@@ -72,10 +72,10 @@ minimizer; run-to-run spread ≈ 1–2 units.
    pipeline gives Δχ² = −19.9 for Planck + DESI DR2 + DES-SN5YR and −8.3 with Pantheon+, against
    the published −21 (4.2σ) and 2.8σ, with best-fit $(w_0, w_a)$ matching to ~0.05.
 2. **The compressed rig is a reliable guide.** On matched data it tracks the full likelihood to
-   within ≈ 2 units of Δχ²; the distance-prior CMB understates the signal modestly, as expected.
+   within ≈ 2–3 units of Δχ² (always on the low side: the distance-prior CMB understates the signal modestly, as expected).
 3. **The single largest effect in the question is the DES supernova calibration.** The 2025
    Dovekie recalibration leaves the best fit almost unchanged, $(w_0, w_a) \approx (-0.76, -0.9)$,
-   but reduces the evidence from Δχ² ≈ −20 to ≈ −8 to −11 with everything else identical. The
+   but reduces the evidence from Δχ² ≈ −20 to ≈ −12 with everything else identical. The
    signal's location is stable; its strength depends on how ~1,800 supernovae were calibrated.
 4. **Where the signal lives.** It is in BAO + CMB alone at ≈ 2.5σ; supernovae pin its amplitude.
    It is a preference for evolution with an effective phantom crossing near $z \approx 0.5$, which
