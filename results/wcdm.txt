@@ -1,0 +1,7 @@
+model: wcdm   parameters: H0, rd, Om, w
+
+chi2 = 1417.97  (CC 6.16, BAO 9.32, SN 1402.48);  k = 4;  AIC = 1425.97
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = -4.5, dAIC = -2.5
+vs Janus: dchi2 = -321.1
+
+best fit: H0 = 67.18, rd = 148.5, Om = 0.2977, w = -0.9144

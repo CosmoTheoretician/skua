@@ -8,7 +8,7 @@ from likelihoods import SN, chi2_cc, chi2_bao, ZG
 REF = {"flat LCDM": 1422.50, "Janus": 1739.05}
 name = sys.argv[1]
 m = importlib.import_module(f"models.{name}")
-sn = SN("pantheon")
+sn = SN(sys.argv[2] if len(sys.argv) > 2 else "pantheon")
 
 
 def total(q):
@@ -36,4 +36,4 @@ lines = [f"model: {name}   parameters: H0, rd, " + ", ".join(m.NAMES), "",
          "best fit: " + ", ".join(f"{n} = {v:.4g}" for n, v in zip(["H0", "rd"] + list(m.NAMES), q))]
 text = "\n".join(lines)
 print(text)
-open(f"results/{name}.txt", "w").write(text + "\n")
+open(f"results/{name}_{sys.argv[2] if len(sys.argv) > 2 else 'pantheon'}.txt", "w").write(text + "\n")

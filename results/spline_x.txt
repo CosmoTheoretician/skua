@@ -1,0 +1,7 @@
+model: spline_x   parameters: H0, rd, Om, f05, f1, f2
+
+chi2 = 1416.38  (CC 6.42, BAO 7.81, SN 1402.16);  k = 6;  AIC = 1428.38
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = -6.1, dAIC = -0.1
+vs Janus: dchi2 = -322.7
+
+best fit: H0 = 67.05, rd = 148.7, Om = 0.3231, f05 = 1.068, f1 = 0.9071, f2 = 0.2895

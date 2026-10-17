@@ -1,0 +1,7 @@
+model: cpl   parameters: H0, rd, Om, w0, wa
+
+chi2 = 1417.73  (CC 6.20, BAO 8.96, SN 1402.57);  k = 5;  AIC = 1427.73
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = -4.8, dAIC = -0.8
+vs Janus: dchi2 = -321.3
+
+best fit: H0 = 67.09, rd = 148.6, Om = 0.3051, w0 = -0.8925, wa = -0.2068

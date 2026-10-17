@@ -1,0 +1,7 @@
+model: janus   parameters: H0, rd, q0
+
+chi2 = 1739.05  (CC 8.21, BAO 237.61, SN 1493.23);  k = 3;  AIC = 1745.05
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = +316.6, dAIC = +316.6
+vs Janus: dchi2 = +0.0
+
+best fit: H0 = 58.96, rd = 154.3, q0 = 0.08525

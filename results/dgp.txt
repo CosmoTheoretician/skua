@@ -1,0 +1,7 @@
+model: dgp   parameters: H0, rd, Om
+
+chi2 = 1429.67  (CC 6.27, BAO 16.90, SN 1406.50);  k = 3;  AIC = 1435.67
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = +7.2, dAIC = +7.2
+vs Janus: dchi2 = -309.4
+
+best fit: H0 = 65.95, rd = 148.8, Om = 0.251

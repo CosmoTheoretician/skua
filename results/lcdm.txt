@@ -1,0 +1,7 @@
+model: lcdm   parameters: H0, rd, Om
+
+chi2 = 1422.50  (CC 6.06, BAO 11.18, SN 1405.26);  k = 3;  AIC = 1428.50
+vs flat LCDM (k=3, AIC 1428.50): dchi2 = -0.0, dAIC = -0.0
+vs Janus: dchi2 = -316.6
+
+best fit: H0 = 68.13, rd = 148.3, Om = 0.3043
