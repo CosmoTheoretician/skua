@@ -1,0 +1,27 @@
+ -log(Like) = 1328.9322566337355
+  chi-sq    = 2657.864513267471
+
+    1  3.045579922e+00   logA                                              logA
+    3  9.674097164e-01   ns                                                ns
+    4  6.718477390e+01   H0                                                H0
+    5  2.244114252e-02   ombh2                                             ombh2
+    6  1.190236352e-01   omch2                                             omch2
+    7  5.396087520e-02   tau                                               tau
+   11  -7.621240574e-01  w                                                 w
+   12  -8.392484847e-01  wa                                                wa
+   13  1.002654899e+00   A_planck                                          y_\mathrm{cal}
+
+
+    2  2.102221892e-09   As                                                As
+    8  3.148342214e-01   omegam                                            omegam
+    9  8.081281324e-01   sigma8                                            sigma8
+   10  1.472818460e+02   rdrag                                             rdrag
+   14  9.520124871e+00   chi2__BAO                                         \chi^2_\mathrm{BAO}
+   15  1.010551155e+03   chi2__CMB                                         \chi^2_\mathrm{CMB}
+   16  1.637423096e+03   chi2__SN                                          \chi^2_\mathrm{SN}
+   17  2.279967914e+01   chi2__planck_2018_lowl.TT                         \chi^2_{\rm planck\ 2018\ lowl.TT}
+   18  3.959177149e+02   chi2__planck_2018_lowl.EE                         \chi^2_{\rm planck\ 2018\ lowl.EE}
+   19  5.832951407e+02   chi2__planck_2018_highl_plik.TTTEEE_lite_native   \chi^2_{\rm planck\ 2018\ highl\ plik.TTTEEE\ lite\ native}
+   20  8.538620544e+00   chi2__planck_2018_lensing.native                  \chi^2_{\rm planck\ 2018\ lensing.native}
+   21  9.520124871e+00   chi2__bao.desi_dr2.desi_bao_all                   \chi^2_{\rm bao.desi\ dr2.desi\ bao\ all}
+   22  1.637423096e+03   chi2__sn.desy5                                    \chi^2_{\rm sn.desy5}
