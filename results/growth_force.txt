@@ -1,0 +1,17 @@
+Dark-sector fifth force on linear growth (22 fsigma8 points, Gold 2018); LCDM background fixed
+
+ beta^2    DM tracer, s8 marg.   baryon tracer, s8 marg.   DM tracer, CMB-normalised   baryon, CMB-norm.
+  0.000        13.27 (s8=0.764)           13.27 (s8=0.764)             15.97 (s8=0.811)     15.97 (s8=0.811)
+  0.050        13.70 (s8=0.738)           13.69 (s8=0.741)             69.09 (s8=0.942)     36.45 (s8=0.873)
+  0.100        14.18 (s8=0.714)           14.16 (s8=0.720)            215.87 (s8=1.091)     81.67 (s8=0.940)
+  0.150        14.73 (s8=0.692)           14.69 (s8=0.700)            500.71 (s8=1.260)    158.86 (s8=1.013)
+  0.200        15.32 (s8=0.672)           15.27 (s8=0.681)            983.31 (s8=1.451)    276.79 (s8=1.091)
+  0.250        15.96 (s8=0.654)           15.90 (s8=0.664)           1743.05 (s8=1.666)    446.11 (s8=1.176)
+  0.300        16.64 (s8=0.637)           16.57 (s8=0.647)           2884.45 (s8=1.908)    679.68 (s8=1.268)
+  0.350        17.36 (s8=0.621)           17.27 (s8=0.632)           4544.06 (s8=2.179)    992.95 (s8=1.367)
+  0.400        18.11 (s8=0.607)           18.01 (s8=0.617)           6898.95 (s8=2.484)   1404.46 (s8=1.474)
+
+  DM tracer, sigma8 marginalised        : best beta^2 = 0.000, chi2(0) = 13.27, min = 13.27;  beta^2 < 0.335 (95%)
+  baryon tracer, sigma8 marginalised    : best beta^2 = 0.000, chi2(0) = 13.27, min = 13.27;  beta^2 < 0.340 (95%)
+  DM tracer, CMB-normalised sigma8      : best beta^2 = 0.000, chi2(0) = 15.97, min = 15.97;  beta^2 < 0.010 (95%)
+  baryon tracer, CMB-normalised sigma8  : best beta^2 = 0.000, chi2(0) = 15.97, min = 15.97;  beta^2 < 0.015 (95%)

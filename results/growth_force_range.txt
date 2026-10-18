@@ -1,0 +1,32 @@
+95% upper bound on beta^2 (DM-DM fifth force) vs range lambda, fsigma8 with CMB-normalised sigma8
+
+ lambda [Mpc/h]     k=0.05 h/Mpc     k=0.15 h/Mpc      k=0.3 h/Mpc
+           0.10           1.1806           0.1612           0.0613
+           0.15           0.5671           0.0909           0.0409
+           0.22           0.2817           0.0563           0.0296
+           0.32           0.1482           0.0382           0.0227
+           0.46           0.0846           0.0280           0.0182
+           0.68           0.0531           0.0217           0.0151
+           1.00           0.0365           0.0175           0.0128
+           1.47           0.0270           0.0146           0.0112
+           2.15           0.0210           0.0125           0.0100
+           3.16           0.0171           0.0109           0.0093
+           4.64           0.0143           0.0098           0.0088
+           6.81           0.0122           0.0091           0.0085
+          10.00           0.0107           0.0087           0.0084
+          14.68           0.0097           0.0085           0.0084
+          21.54           0.0091           0.0084           0.0083
+          31.62           0.0087           0.0083           0.0083
+          46.42           0.0085           0.0083           0.0083
+          68.13           0.0084           0.0083           0.0083
+         100.00           0.0083           0.0083           0.0083
+         146.78           0.0083           0.0083           0.0083
+         215.44           0.0083           0.0083           0.0083
+         316.23           0.0083           0.0083           0.0083
+         464.16           0.0083           0.0083           0.0083
+         681.29           0.0083           0.0083           0.0083
+        1000.00           0.0083           0.0083           0.0083
+
+Reading: the linear bound is the long-range value (~0.01) for lambda >> 1/k, weakens as lambda drops below
+the probed scales, and disappears once the force is shorter than a few Mpc/h. Below that, only nonlinear
+structure (halos, clusters, galaxies) can constrain it.

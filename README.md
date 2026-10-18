@@ -128,6 +128,31 @@ measure it.
    it reproduces both sides' numbers with one instrument. DESI DR3 and a unified supernova
    compilation are the data that will.
 
+## Dark-sector fifth force (`growth_force.py`, `growth_force_range.py`)
+
+The structure mechanism that survived the Janus tests — a second population whose own dynamics
+shape ordinary matter — placed in a framework the data accept: ΛCDM background, positive masses,
+and one new ingredient, an attractive Yukawa force between dark-matter particles of strength
+$\beta^2$ relative to gravity and physical range $\lambda$; baryons feel gravity only.
+
+Linear two-fluid growth against the Gold-2018 $f\sigma_8$ compilation, ΛCDM background fixed at
+the Planck + DESI + SN best fit:
+
+| regime | 95% bound on $\beta^2$ | why |
+|---|---|---|
+| $\sigma_8$ marginalised (shape only), any range | < 0.33 | the growth *shape* barely constrains it |
+| CMB-normalised amplitude, $\lambda \gtrsim 10$ Mpc/h | **< 0.0083** | extra growth raises $\sigma_8$, which the data already want below Planck |
+| CMB-normalised, $\lambda = 1$ Mpc/h | < 0.013–0.037 | a fixed physical range is a large comoving range at high $z$ |
+| CMB-normalised, $\lambda = 0.1$ Mpc/h | 0.06 – > 1 (scale dependent) | linear modes no longer feel it |
+
+A long-range dark force is limited to < 1% of gravity (consistent with Planck + BOSS bounds in
+the literature). Below ≈ 100 kpc/h the linear data lose their grip entirely: a halo-scale force
+comparable to gravity is allowed. That is the regime of the N-body phase: halo baryon fractions,
+gas–dark-matter offsets and satellite kinematics as the tests, run as differential measurements
+against ΛCDM baselines with the companion simulation code.
+
+![95% bound on the fifth-force strength versus its range](results/growth_force_range.png)
+
 ## What the data require of any model (`notes/requirements.md`)
 
 Decelerating expansion at $z > 0.7$ and gentle acceleration since; $r_d \approx 147$ Mpc with
