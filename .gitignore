@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
 data
+chains/*.txt
+chains/*.log
+chains/*.progress
+chains/*.checkpoint
+chains/*.covmat
+chains/*.lock*
