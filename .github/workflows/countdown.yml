@@ -15,12 +15,12 @@ jobs:
           TARGET="2027-01-31"            # nominal DESI DR3 date; edit when announced
           DAYS=$(( ( $(date -d "$TARGET" +%s) - $(date +%s) ) / 86400 ))
           if [ "$DAYS" -ge 0 ]; then MSG="**$DAYS days to go**"; else MSG="**DR3 window reached — rerun the rig** (see notes/rerun.md)"; fi
-          NEW="<!-- countdown:start -->**Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal $TARGET): $MSG.<!-- countdown:end -->"
+          NEW="**Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal $TARGET): $MSG."
           python3 - "$NEW" << 'PY'
           import re, sys
           new = sys.argv[1]
           r = open("README.md").read()
-          r2 = re.sub(r"<!-- countdown:start -->.*?<!-- countdown:end -->", new, r, flags=re.S)
+          r2 = re.sub(r"(<!-- countdown:start -->\n).*?(\n<!-- countdown:end -->)", lambda m: m.group(1) + new + m.group(2), r, flags=re.S)
           open("README.md", "w").write(r2)
           PY
       - name: Commit if changed
