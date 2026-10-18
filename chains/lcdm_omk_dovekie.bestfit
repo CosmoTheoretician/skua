@@ -1,0 +1,26 @@
+ -log(Like) = 1325.8930057661921
+  chi-sq    = 2651.7860115323842
+
+    1  3.050153565e+00   logA                                              logA
+    3  9.654258517e-01   ns                                                ns
+    4  6.845777372e+01   H0                                                H0
+    5  2.235631353e-02   ombh2                                             ombh2
+    6  1.196918228e-01   omch2                                             omch2
+    7  5.725767401e-02   tau                                               tau
+   11  2.108509431e-03   omk                                               omk
+   12  1.001030659e+00   A_planck                                          y_\mathrm{cal}
+
+
+    2  2.111858724e-09   As                                                As
+    8  3.044789227e-01   omegam                                            omegam
+    9  8.137778091e-01   sigma8                                            sigma8
+   10  1.471992084e+02   rdrag                                             rdrag
+   13  1.129844857e+01   chi2__BAO                                         \chi^2_\mathrm{BAO}
+   14  1.013924374e+03   chi2__CMB                                         \chi^2_\mathrm{CMB}
+   15  1.634163964e+03   chi2__SN                                          \chi^2_\mathrm{SN}
+   16  2.349162064e+01   chi2__planck_2018_lowl.TT                         \chi^2_{\rm planck\ 2018\ lowl.TT}
+   17  3.967115736e+02   chi2__planck_2018_lowl.EE                         \chi^2_{\rm planck\ 2018\ lowl.EE}
+   18  5.848719889e+02   chi2__planck_2018_highl_plik.TTTEEE_lite_native   \chi^2_{\rm planck\ 2018\ highl\ plik.TTTEEE\ lite\ native}
+   19  8.849190909e+00   chi2__planck_2018_lensing.native                  \chi^2_{\rm planck\ 2018\ lensing.native}
+   20  1.129844857e+01   chi2__bao.desi_dr2.desi_bao_all                   \chi^2_{\rm bao.desi\ dr2.desi\ bao\ all}
+   21  1.634163964e+03   chi2__sn.desy5                                    \chi^2_{\rm sn.desy5}

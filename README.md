@@ -66,6 +66,38 @@ distinguish the readings (all models give growth χ² ≈ 13.4).
 Δχ² is w₀wₐCDM minus ΛCDM at the best fit, two extra parameters. Best fits from `cobaya`'s
 minimizer; run-to-run spread ≈ 1–2 units.
 
+### Mundane explanations first (`results/calib_test_z0.1.txt`, `chains/ext.log`)
+
+Before building any model on the signal, the two explanations that need no new physics.
+
+**A low-redshift supernova calibration offset.** One free magnitude offset Δ for supernovae
+below $z = 0.1$ (where the nearby calibration samples hand over to the surveys), profiled
+analytically together with the absolute magnitude; CC + BAO + compressed CMB + supernovae:
+
+| sample | CPL − ΛCDM, no offset | with Δ free | surviving | Δ wanted by ΛCDM | Δ wanted by CPL |
+|---|---|---|---|---|---|
+| DES-Dovekie (201 SNe below 0.1) | −9.3 | **−2.4** | 25% | +0.034 mag | +0.019 mag |
+| Pantheon+ (630 SNe below 0.1) | −6.4 | **−4.3** | 67% | +0.016 mag | −0.008 mag |
+
+On Dovekie, ΛCDM gains 7.7 units from a 0.034 mag offset alone — the size Efstathiou (2024)
+identified between the two compilations at $z < 0.1$ — and three quarters of the evolving-DE
+evidence is degenerate with it. On Pantheon+ the offset wanted is half as large and two thirds
+of a weaker signal survives, at ≈ 2σ.
+
+**Standard one-parameter extensions of ΛCDM** (full likelihood, Planck + DESI DR2 + Dovekie;
+ΛCDM χ² = 2662.3, w₀wₐ = 2649.9):
+
+| extension | Δχ² vs ΛCDM | best fit |
+|---|---|---|
+| Σmν free | −3.6 | Σmν → 0 (the known preference for a mass below the oscillation minimum) |
+| Ω_k free | −2.9 | Ω_k = +0.002 |
+| N_eff free | +0.5 | N_eff = 2.94 |
+| w₀wₐ | −12.4 | (−0.81, −0.66) |
+
+None substitutes for evolving dark energy: the signal is specifically about the late-time
+expansion, which is consistent with both readings — dark energy, or the supernovae that
+measure it.
+
 ## Conclusions
 
 1. **The DESI DR2 evolving-dark-energy result reproduces.** With the full likelihoods this
@@ -82,7 +114,15 @@ minimizer; run-to-run spread ≈ 1–2 units.
    excludes thawing quintessence and the simplest interacting models, and leaves: a genuinely
    crossing effective equation of state (multi-field or non-minimally coupled), an interacting
    dark sector with evolving $w$, or an unresolved tension between datasets.
-5. **Status.** The evidence is 2.5–3.3σ depending on catalogue and statistic, and the field is
+5. **The simplest adequate explanation is a calibration offset.** Allowing one free
+   low-redshift magnitude offset of 0.02–0.03 mag — within the range of known survey-to-survey
+   systematics and equal to the Pantheon+/DES discrepancy already reported — removes three
+   quarters of the DES evidence and a third of the Pantheon+ evidence, leaving ≈ 2σ in each.
+   No standard one-parameter extension of ΛCDM (Σmν, N_eff, Ω_k) absorbs the signal instead.
+   By Occam's razor the current preference for evolving dark energy is adequately explained by
+   supernova calibration plus a ≈ 2σ residual from BAO + CMB; it is not yet a foundation for
+   model-building.
+6. **Status.** The evidence is 2.5–3.3σ depending on catalogue and statistic, and the field is
    split between a frequentist "3σ and growing" reading and a Bayesian "no evidence once the extra
    parameters are penalised and Dovekie is used" reading. Nothing in this repository settles that;
    it reproduces both sides' numbers with one instrument. DESI DR3 and a unified supernova

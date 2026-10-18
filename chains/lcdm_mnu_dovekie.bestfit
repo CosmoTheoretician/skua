@@ -1,0 +1,26 @@
+ -log(Like) = 1327.908143455743
+  chi-sq    = 2655.816286911486
+
+    1  3.045591817e+00   logA                                              logA
+    3  9.678523806e-01   ns                                                ns
+    4  6.852879737e+01   H0                                                H0
+    5  2.252150282e-02   ombh2                                             ombh2
+    6  1.186411288e-01   omch2                                             omch2
+    7  5.190113802e-02   tau                                               tau
+   11  7.964969337e-05   mnu                                               mnu
+   12  1.004943189e+00   A_planck                                          y_\mathrm{cal}
+
+
+    2  2.102246899e-09   As                                                As
+    8  3.006016284e-01   omegam                                            omegam
+    9  8.205422074e-01   sigma8                                            sigma8
+   10  1.473011725e+02   rdrag                                             rdrag
+   13  1.187610389e+01   chi2__BAO                                         \chi^2_\mathrm{BAO}
+   14  1.011427902e+03   chi2__CMB                                         \chi^2_\mathrm{CMB}
+   15  1.635351746e+03   chi2__SN                                          \chi^2_\mathrm{SN}
+   16  2.285353147e+01   chi2__planck_2018_lowl.TT                         \chi^2_{\rm planck\ 2018\ lowl.TT}
+   17  3.956919852e+02   chi2__planck_2018_lowl.EE                         \chi^2_{\rm planck\ 2018\ lowl.EE}
+   18  5.841688737e+02   chi2__planck_2018_highl_plik.TTTEEE_lite_native   \chi^2_{\rm planck\ 2018\ highl\ plik.TTTEEE\ lite\ native}
+   19  8.713512126e+00   chi2__planck_2018_lensing.native                  \chi^2_{\rm planck\ 2018\ lensing.native}
+   20  1.187610389e+01   chi2__bao.desi_dr2.desi_bao_all                   \chi^2_{\rm bao.desi\ dr2.desi\ bao\ all}
+   21  1.635351746e+03   chi2__sn.desy5                                    \chi^2_{\rm sn.desy5}

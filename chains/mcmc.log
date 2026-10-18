@@ -1,0 +1,16 @@
+nohup: ignoring input
+[output] Output to be read-from/written-into folder 'chains', with prefix 'mcmc_w0wa'
+[camb] `camb` module loaded successfully from /home/roche/scraper/venv-gpu/lib/python3.12/site-packages/camb
+[bao.desi_dr2.desi_bao_all] Initialized.
+[mcmc] Getting initial point... (this may take a few seconds)
+[mcmc] Initial point: logA:3.049274, ns:0.9665212, H0:67.24125, ombh2:0.02224037, omch2:0.1188852, tau:0.05087217, w:-0.7487894, wa:-0.8730842, A_planck:0.9995
+[model] Measuring speeds... (this may take a few seconds)
+[model] Setting measured speeds (per sec): {planck_2018_lowl.TT: 1510.0, planck_2018_lowl.EE: 11100.0, planck_2018_highl_plik.TTTEEE_lite_native: 413.0, planck_2018_lensing.native: 3370.0, bao.desi_dr2.desi_bao_all: 732.0, sn.desy5: 145.0, camb.transfers: 1.74, camb: 4.93}
+[mcmc] Oversampling with factors:
+[mcmc] * 1 : ['H0', 'ombh2', 'omch2', 'tau', 'w', 'wa']
+[mcmc] * 1 : ['logA', 'ns']
+[mcmc] * 7 : ['A_planck']
+[mcmc] Covariance matrix not present. We will start learning the covariance of the proposal earlier: R-1 = 30 (would be 2 if all params loaded).
+[mcmc] Sampling!
+[mcmc] Progress @ 2026-10-18 02:51:52 : 1 steps taken, and 0 accepted.
+[mcmc] Progress @ 2026-10-18 02:52:53 : 142 steps taken, and 41 accepted.

@@ -1,0 +1,20 @@
+Low-z calibration offset test: free magnitude offset Delta for z < 0.1 (profiled with M)
+
+DES-SN5YR Dovekie (1820 SNe): 201 SNe below z_split
+  lcdm  no offset     chi2 =   1654.66   H0 = 68.6, Om = 0.305
+  lcdm  with Delta    chi2 =   1646.99   H0 = 68.7, Om = 0.303   Delta = +0.0336 mag
+  cpl   no offset     chi2 =   1645.35   H0 = 67.7, Om = 0.315, w0 = -0.833, wa = -0.603
+  cpl   with Delta    chi2 =   1644.61   H0 = 68.3, Om = 0.309, w0 = -0.899, wa = -0.410   Delta = +0.0187 mag
+  CPL - LCDM:  -9.3 without offset  ->  -2.4 with offset   (signal surviving: 25%)
+  LCDM gains 7.7 from the offset alone; offset LCDM wants: +0.0336 mag
+
+Pantheon+ (1590 SNe): 630 SNe below z_split
+  lcdm  no offset     chi2 =   1425.47   H0 = 68.6, Om = 0.304
+  lcdm  with Delta    chi2 =   1423.16   H0 = 68.6, Om = 0.303   Delta = +0.0160 mag
+  cpl   no offset     chi2 =   1419.05   H0 = 67.9, Om = 0.313, w0 = -0.864, wa = -0.485
+  cpl   with Delta    chi2 =   1418.85   H0 = 67.6, Om = 0.316, w0 = -0.834, wa = -0.573   Delta = -0.0077 mag
+  CPL - LCDM:  -6.4 without offset  ->  -4.3 with offset   (signal surviving: 67%)
+  LCDM gains 2.3 from the offset alone; offset LCDM wants: +0.0160 mag
+
+Context: survey-to-survey calibration systematics in current compilations are at the ~0.01-0.02 mag level;
+Efstathiou (2024) pointed to a ~0.04 mag offset between Pantheon+ and DES-SN5YR at z < 0.1.
