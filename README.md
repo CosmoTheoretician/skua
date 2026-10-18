@@ -1,5 +1,7 @@
 # skua
 
+<!-- countdown:start -->**Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal 2027-01-31): **? days to go**.<!-- countdown:end -->
+
 A test rig for cosmological expansion histories, and what it says about the current evidence for
 evolving dark energy. Successor to [janus-background-fits](../janus-background-fits), which ruled
 out the Janus model; this repository asks the open question that followed: *where, if anywhere, do
