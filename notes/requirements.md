@@ -16,3 +16,13 @@
 - The structure mechanism: a second population that clumps and pushes ordinary matter into walls (reproduced in N-body,
   linear growth rate matches two-fluid theory).
 - Nothing from its background.
+
+# Dark-sector fifth force: N-body implementation (sim_gpu2, A18)
+
+- DM-DM Yukawa kernel 2 beta^2 k^2/(k^2 + 1/lambda^2) added to the PM solver (GPU path; both species positive,
+  s is a species label). Validated against linear two-fluid theory with no free parameters:
+  expanding runs (ratio 5.2, beta^2 = 0 and 0.3): growth rate of both species matches theory to ~2% over a
+  50-fold expansion; the DM/baryon split matches to 2% through the linear phase and falls ~10% short once
+  nonlinear coupling starts (t ~ 8-10 t_J). Static runs show a ~20% rate deficit common to both species
+  (thermal velocities, collisionless damping); not relevant for expanding production runs.
+- The constant amplitude offset (~0.6) is the expansion switch-on transient, as in the Janus runs.
