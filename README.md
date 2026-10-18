@@ -1,5 +1,14 @@
 # skua
 
+[![status: complete](https://img.shields.io/badge/status-complete-2ea043)](#)
+[![awaiting DESI DR3](https://img.shields.io/badge/awaiting-DESI%20DR3-blue)](#)
+[![DR3 countdown](https://github.com/CosmoTheoretician/skua/actions/workflows/countdown.yml/badge.svg)](https://github.com/CosmoTheoretician/skua/actions/workflows/countdown.yml)
+[![reproduces DESI DR2](https://img.shields.io/badge/reproduces-DESI%20DR2%20w%E2%82%80w%E2%82%90-6f42c1)](#full-likelihood-cobaya--camb-and-the-calibration)
+[![validated](https://img.shields.io/badge/every%20number-validated%20against%20published-orange)](#validation)
+[![python](https://img.shields.io/badge/python-3.12-3776ab?logo=python&logoColor=white)](#)
+[![cobaya + CAMB](https://img.shields.io/badge/cobaya-CAMB-lightgrey)](#)
+![last commit](https://img.shields.io/github/last-commit/CosmoTheoretician/skua)
+
 <!-- countdown:start -->
 **Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal 2027-01-31): **104 days to go**.
 <!-- countdown:end -->
