@@ -160,11 +160,48 @@ the Planck + DESI + SN best fit:
 
 A long-range dark force is limited to < 1% of gravity (consistent with Planck + BOSS bounds in
 the literature). Below ≈ 100 kpc/h the linear data lose their grip entirely: a halo-scale force
-comparable to gravity is allowed. That is the regime of the N-body phase: halo baryon fractions,
-gas–dark-matter offsets and satellite kinematics as the tests, run as differential measurements
-against ΛCDM baselines with the companion simulation code.
+comparable to gravity is allowed. That is the regime of the N-body phase below.
 
 ![95% bound on the fifth-force strength versus its range](results/growth_force_range.png)
+
+### N-body phase: what a galaxy-scale force does to halos (`halo_baryon_fraction.py`, `fifth_force_map.py`)
+
+The force was implemented in the companion PM code (A18: DM–DM Yukawa kernel, both species positive,
+baryons feel gravity only) and validated against linear two-fluid theory with no free parameters:
+growth rates of both species to ~2% over a 50-fold expansion, and the DM/baryon split to 2% through the
+linear regime. Production: 400k baryon + 2.08M dark-matter particles (equal particle masses — unequal
+masses produce a spurious 5–8% baryon depletion by two-body segregation, confirmed and removed), 256³
+PM grid, EdS expansion from a = 1/50, same seed for every run, cold species. Halos by friends-of-friends
+on dark matter, R₂₀₀ on total mass; ≈ 730–800 halos with ≥ 200 particles per run; the baseline gives
+f_b/f_cosmic = 0.99–1.01 in every mass bin.
+
+| β² | f_b(β)/f_b(0) at R₂₀₀ | inside R₂₀₀/3 |
+|---|---|---|
+| 0.1 | 0.88 – 0.91 | 0.70 – 0.82 |
+| 0.3 | 0.75 – 0.83 | 0.48 – 0.60 |
+| 1.0 | 0.64 – 0.70 | 0.29 – 0.38 |
+
+Ranges from four mass bins spanning a factor 50 and two force ranges (λ ≈ 2 and 4 R₂₀₀); the result
+is nearly independent of both once the force spans the halo. Scale-free: 1 code mass ≈ 1.3 × 10¹²
+M☉/h for a 10 Mpc/h box, i.e. these are galaxy-scale halos.
+
+**What it means.** In the only window the linear data leave open (λ ≲ 100 kpc), the halos a strong
+dark force would affect are galaxy halos, whose observed baryon fractions are set by feedback at the
+factor-of-several level — a 10–30% force-driven depletion cannot be isolated there. Where baryon
+fractions are a clean observable (clusters, f_gas to ~10%), the force would have to reach R₂₀₀ ≈ 1–2
+Mpc, where the linear bound already limits β² to ≲ 0.01 and the depletion to ~1%. A short-range force
+acting *inside* clusters (λ ≪ R₂₀₀) is the one case left, and it needs a dynamic range beyond a PM code
+on one GPU. The observables that could test a galaxy-scale dark force are halo structure — concentrations,
+satellite kinematics, gas–dark-matter offsets — not baryon budgets.
+
+![Halo baryon depletion versus fifth-force strength](results/fifth_force_map.png)
+
+**Related work.** None of the physics here is new; the value is an independent, validated re-derivation.
+Long-range dark forces in cosmology: Gradwohl & Frieman (1992). N-body with a scalar-mediated dark-matter
+force and the resulting baryon/dark-matter segregation: Nusser, Gubser & Peebles (2005) PRD 71, 083505;
+Keselman, Nusser & Peebles (2010) PRD 81, 063521. Yukawa-type dark forces in simulations: Hellwing &
+Juszkiewicz (2009) PRD 80, 083522. Halo baryon fractions in coupled dark energy: Baldi et al. (2010)
+MNRAS 403, 1684. Linear-cosmology bounds: Archidiacono, Castorina, Redigolo & Salvioni (2022) JCAP 10, 074.
 
 ## What the data require of any model (`notes/requirements.md`)
 

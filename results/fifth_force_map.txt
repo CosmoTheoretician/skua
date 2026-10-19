@@ -1,0 +1,19 @@
+Dark-sector fifth force: halo baryon fraction relative to the beta = 0 run (same seed), common mass bins
+
+range lambda = 0.016 box units  (baseline f_b/f_cosmic at R200: 0.992, 1.008, 1.008, 1.013)
+
+ beta^2 |  bin1 R200  bin2 R200  bin3 R200  bin4 R200 |  bin1 inner  bin2 inner  bin3 inner  bin4 inner
+   0.10 |      0.893      0.904      0.906      0.914 |       0.742       0.756       0.771       0.819
+   0.30 |      0.778      0.783      0.807      0.826 |       0.531       0.525       0.545       0.596
+   1.00 |      0.684      0.696      0.683      0.698 |       0.326       0.317       0.355       0.378
+
+range lambda = 0.03 box units  (baseline f_b/f_cosmic at R200: 0.993, 1.009, 1.008, 1.013)
+
+ beta^2 |  bin1 R200  bin2 R200  bin3 R200  bin4 R200 |  bin1 inner  bin2 inner  bin3 inner  bin4 inner
+   0.10 |      0.877      0.881      0.894      0.900 |       0.734       0.698       0.739       0.777
+   0.30 |      0.745      0.761      0.762      0.786 |       0.477       0.485       0.481       0.571
+   1.00 |      0.647      0.697      0.641      0.656 |       0.287       0.321       0.296       0.325
+
+bins: M200 in code mass [1-2, 2-4, 4-8, 8-100] x 1e-3 (lightest to heaviest); inner = within R200/3.
+Halos here have R200 ~ 0.006-0.01 box units, i.e. lambda/R200 ~ 2 (0.016) and ~4 (0.03): the force spans the halo.
+Numerical baseline depletion (unequal particle masses) cancels in the ratio to first order; see the equal-mass check.
