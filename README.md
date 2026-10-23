@@ -10,7 +10,7 @@
 ![last commit](https://img.shields.io/github/last-commit/CosmoTheoretician/skua)
 
 <!-- countdown:start -->
-**Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal 2027-01-31): **100 days to go**.
+**Status:** complete, awaiting DESI DR3 (expected late 2026 / early 2027; nominal 2027-01-31): **99 days to go**.
 <!-- countdown:end -->
 
 A test rig for cosmological expansion histories, and what it says about the current evidence for
